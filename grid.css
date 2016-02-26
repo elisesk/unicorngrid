@@ -1,0 +1,61 @@
+/* Breakpoints
+
+Small screens: 0 px -> 640 px
+Medium screens: 640 px -> 1024px
+Large screens: 1024px -> 1200px
+
+
+
+*/
+
+/* The grid's container*/
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Because border-box <3 */
+.grid-container * {
+  box-sizing: border-box;
+}
+
+/* Row clearfix */
+.row:before,
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Stacking columns */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 8.33%;
+  padding: 12px; /* The gutter */
+}
+
+.outline, .outline * {
+  outline: 1px solid #F6A1A1;
+}
+
+/* Different column widths - large screens */
+.large-1  {  width: 8.33%;   }
+.large-2  {  width: 16.66%;  }
+.large-3  {  width: 24.99%;  }
+.large-4  {  width: 33.33%;  }
+.large-5  {  width: 41.66%;  }
+.large-6  {  width: 50%;     }
+.large-7  {  width: 58.33%;  }
+.large-8  {  width: 66.66%;  }
+.large-9  {  width: 74.99%;  }
+.large-10 {  width: 83.33%;  }
+.large-11 {  width: 91.66%;  }
+.large-12 {  width: 100%;    }
+
+/* Responsive grid - on small screens all are 100% */
+@media all and (max-width:640px){
+  .small-12  {  width: 100%;  }
+}
+
+/*  */
