@@ -2,9 +2,8 @@
 
 Small screens: 0 px -> 640 px
 Medium screens: 640 px -> 1024px
-Large screens: 1024px -> 1200px
-
-
+Large screens: 1024px -> max width / infinity
+Max width is 1200px
 
 */
 
@@ -28,7 +27,7 @@ Large screens: 1024px -> 1200px
 }
 
 /* Stacking columns */
-[class*='col-'] {
+.columns {
   float: left;
   min-height: 1px;
   width: 8.33%;
@@ -39,23 +38,50 @@ Large screens: 1024px -> 1200px
   outline: 1px solid #F6A1A1;
 }
 
-/* Different column widths - large screens */
-.large-1  {  width: 8.33%;   }
-.large-2  {  width: 16.66%;  }
-.large-3  {  width: 24.99%;  }
-.large-4  {  width: 33.33%;  }
-.large-5  {  width: 41.66%;  }
-.large-6  {  width: 50%;     }
-.large-7  {  width: 58.33%;  }
-.large-8  {  width: 66.66%;  }
-.large-9  {  width: 74.99%;  }
-.large-10 {  width: 83.33%;  }
-.large-11 {  width: 91.66%;  }
-.large-12 {  width: 100%;    }
-
-/* Responsive grid - on small screens all are 100% */
+/* Responsive grid - Column widths on small screens */
 @media all and (max-width:640px){
+  .small-1  {  width: 8.33%;   }
+  .small-2  {  width: 16.66%;  }
+  .small-3  {  width: 24.99%;  }
+  .small-4  {  width: 33.33%;  }
+  .small-5  {  width: 41.66%;  }
+  .small-6  {  width: 50%;     }
+  .small-7  {  width: 58.33%;  }
+  .small-8  {  width: 66.66%;  }
+  .small-9  {  width: 74.99%;  }
+  .small-10 {  width: 83.33%;  }
+  .small-11 {  width: 91.66%;  }
   .small-12  {  width: 100%;  }
 }
 
-/*  */
+/* Responsive grid - Column widths on medium screens */
+@media all and (min-width:640px) and (max-width:1024px){
+  .medium-1  {  width: 8.33%;   }
+  .medium-2  {  width: 16.66%;  }
+  .medium-3  {  width: 24.99%;  }
+  .medium-4  {  width: 33.33%;  }
+  .medium-5  {  width: 41.66%;  }
+  .medium-6  {  width: 50%;     }
+  .medium-7  {  width: 58.33%;  }
+  .medium-8  {  width: 66.66%;  }
+  .medium-9  {  width: 74.99%;  }
+  .medium-10 {  width: 83.33%;  }
+  .medium-11 {  width: 91.66%;  }
+  .medium-12 {  width: 100%;    }
+}
+
+/* Responsive grid - Column widths on large screens */
+@media all and (min-width:1024px) {
+  .large-1  {  width: 8.33%;   }
+  .large-2  {  width: 16.66%;  }
+  .large-3  {  width: 24.99%;  }
+  .large-4  {  width: 33.33%;  }
+  .large-5  {  width: 41.66%;  }
+  .large-6  {  width: 50%;     }
+  .large-7  {  width: 58.33%;  }
+  .large-8  {  width: 66.66%;  }
+  .large-9  {  width: 74.99%;  }
+  .large-10 {  width: 83.33%;  }
+  .large-11 {  width: 91.66%;  }
+  .large-12 {  width: 100%;    }
+}
